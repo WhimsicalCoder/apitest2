@@ -11,7 +11,7 @@
 	<script>
 		function callAPI() {
 			var xhr = new XMLHttpRequest();
-			xhr.open('GET', 'https://datausa.io/api/data?drilldowns=Nation&measures=Population
+			xhr.open('GET', 'https://api.coindesk.com/v1/bpi/currentprice.json
 ', true);
 			xhr.setRequestHeader('Content-Type', 'application/json');
 			xhr.onload = function() {
