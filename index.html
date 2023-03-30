@@ -11,7 +11,8 @@
 	<script>
 		function callAPI() {
 			var xhr = new XMLHttpRequest();
-			xhr.open('GET', 'https://api.coindesk.com/v1/bpi/currentprice.json, true);
+			xhr.open('GET', 'https://api.coindesk.com/v1/bpi/currentprice.json', true);
+			xhr.setRequestHeader('Content-Type', 'application/atom+xml');
 			xhr.onload = function() {
 				if (xhr.status === 200) {
 					alert(xhr.responseText);
@@ -21,4 +22,4 @@
 		}
 	</script>
 </body>
-</html>
+</html> 
