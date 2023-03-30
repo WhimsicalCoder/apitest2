@@ -11,7 +11,7 @@
 	<script>
 		function callAPI() {
 			var xhr = new XMLHttpRequest();
-			xhr.open('GET', 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=SMBZD791J8X3O2RT, true);
+			xhr.open('GET', 'https://api.coindesk.com/v1/bpi/currentprice.json, true);
 			xhr.onload = function() {
 				if (xhr.status === 200) {
 					alert(xhr.responseText);
